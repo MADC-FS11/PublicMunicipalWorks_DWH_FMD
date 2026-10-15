@@ -11,7 +11,7 @@
   "use strict";
 
   const PP_API_BASE = (typeof window !== "undefined" && window.PP_API_BASE)
-    || "https://backend-obraspublicas.onrender.com";
+    || "http://127.0.0.1:5000";
   const TOKEN_KEY = "pp_token";
   const USER_KEY = "pp_user";
   const FRAGMENT_URL = "propuestas/propuestas.html";

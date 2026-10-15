@@ -1,0 +1,9 @@
+services:
+  frontend:
+    image: python:3.11-slim
+    working_dir: /sitio
+    volumes:
+      - ../:/sitio:ro
+    ports:
+      - "127.0.0.1:8080:8000"
+    command: ["python", "-m", "http.server", "8000"]
